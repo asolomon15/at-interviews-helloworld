@@ -1,5 +1,5 @@
 # Hello World Sample App
-Welcome!  If you're cloning this repo, in all likelihood you are starting the QA/Build/Release Engineer Homework assignment.  We're so happy that you've made it this far in the process!  By now you should have received a message from HR with login credentials to our Candidate AWS Environment, and the specifics of the Homework Assignment.  The document you're reading now (this README) is intended to help get you into the AWS environment, and that your account has all the permissions it needs to test locally, and actually complete the assignment.  
+Welcome!  If you're cloning this repo, in all likelihood you are starting the Build & Release Engineer Homework assignment.  We're so happy that you've made it this far in the process!  By now you should have received a message from the hiring manager with login credentials to our Candidate AWS Environment, and the specifics of the Homework Assignment.  The document you're reading now (this README) is intended to help get you into the AWS environment, and that your account has all the permissions it needs to test locally, and actually complete the assignment.  
 
 # Recommended Tooling (for local deployment/testing)
 We recommend having the following tools to hand: 
@@ -13,7 +13,7 @@ We recommend having the following tools to hand:
 [Helm](https://helm.sh)
 
 # AWS Console Access
-You should have received a username and (temporary) password from HR.  With that, you can log into the [AWS Console](at-interviews.signin.aws.amazon.com/) and take a look around, if you are so inclined.  
+You should have received a username and (temporary) password from the hiring manager.  With that, you can log into the [AWS Console](at-interviews.signin.aws.amazon.com/) and take a look around, if you are so inclined.  
 
 # AWS API Access
 Presuming you're on a Linux or MacOS machine, you can create/edit the file `~/.aws/credentials`.  Add a new section similar to the following, substituting the example values for the ones shared by HR: 
