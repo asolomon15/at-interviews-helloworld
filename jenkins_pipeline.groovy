@@ -33,7 +33,6 @@ pipeline{
             steps {
                 sh '"echo" this is the variable ${COMMIT_ID}'
                 sh '"docker" build --no-cache --build-arg GIT_COMMIT=${COMMIT_ID} -t helloworld:${BUILD_ENV}_${COMMIT_ID} -t 310228935478.dkr.ecr.us-west-2.amazonaws.com/helloworld:${BUILD_ENV}_${COMMIT_ID} .'
-                sh '"env"'
             }
         }
         
@@ -50,7 +49,6 @@ pipeline{
                 sh '"aws" ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 310228935478.dkr.ecr.us-west-2.amazonaws.com'
                 sh '"aws" eks update-kubeconfig --region us-west-2 --name at-interviews-cluster'
                 sh '"echo" Pushing image to Repository'
-                sh '"env"'
                 sh '"docker" push 310228935478.dkr.ecr.us-west-2.amazonaws.com/helloworld:${BUILD_ENV}_${COMMIT_ID}'
             }
         }
